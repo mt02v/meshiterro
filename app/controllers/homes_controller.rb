@@ -8,4 +8,6 @@ class HomesController < ApplicationController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   end
   end
+  def about
+  end
 end  
