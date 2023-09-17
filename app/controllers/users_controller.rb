@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(6)
+    @user = User.find(params[:id])
     @post_images = @user.post_images
   end
 

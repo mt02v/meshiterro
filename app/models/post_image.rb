@@ -13,7 +13,7 @@ class PostImage < ApplicationRecord
 
  def get_image
    unless image.attached?
-     file_path = Rails.root.join('app/assents/images/no_image.jpg')
+     file_path = Rails.root.join('app/assents/images/sample-author1.jpg')
      image.attach(io: File.open(File_path), filename: 'default-image.jpg', content_type: 'image/jpeg')
    end
    image
