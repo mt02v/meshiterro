@@ -17,7 +17,13 @@ class PostImagesController < ApplicationController
   def show
     @post_images = Image.find(:id)
   end
-
+  
+  def destroy
+    post_image = Post_images.find(params[:id]
+    post_image.destroy
+    redirect_to '/post_images'
+  end
+  
   private
   
   def post_image_params
